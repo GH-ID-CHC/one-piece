@@ -1,5 +1,12 @@
 button:focus{outline: 0;}
 section{
     margin: 10px auto;
-    border-radius: ;
+}
+.mac-title-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #3369D6;
+    border-bottom: 1px solid #888888;
 }

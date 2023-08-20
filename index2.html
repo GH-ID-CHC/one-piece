@@ -48,35 +48,15 @@
             <li class="nav-item">
               <a class="nav-link" href="./docs/introduction.html">活动专区</a>
             </li>
-
-            <!--<div class="dropdown-divider d-lg-none my-4"></div>
-            <h6 class="dropdown-header font-weight-600 d-lg-none px-0">Social Media</h6>
+<!--              头像显示区域（手机、电脑）-->
             <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://instagram.com/webpixelsofficial/" target="_blank"><i class="fab fa-instagram"></i><span class="ml-2 d-lg-none">Instagram</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://web.facebook.com/webpixels" target="_blank"><i class="fab fa-facebook"></i><span class="ml-2 d-lg-none">Facebook</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://gitee.com/chai-hecheng" target="_blank"><img src="assets/images/svg/gitee.svg"><span class="ml-2 d-lg-none">Gitee</span></a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link nav-link-icon" href="https://github.com/GH-ID-CHC" target="_blank"><i class="fab fa-github"></i><span class="ml-2 d-lg-none">Github</span></a>
-            </li>-->
-
-            <!--<li class="nav-item rounded-0">
-              <a href="#" target="_blank" class="nav-link d-lg-none" data-target="exampleModal">登 录</a>
-              <button target="_blank" class="btn btn-sm bg-white d-none d-lg-inline-flex text-primary" data-toggle="modal" data-target="#loginModal">登录</button>
-            </li>-->
-            <li class="nav-item rounded-0">
-              <a href="#" target="_blank" class="nav-link nav-link-icon" data-toggle="modal" data-target="#loginModal">
-                  <img src="assets/images/svg/user.svg">
+              <a href="#" target="_blank" class="nav-link d-lg-none" data-target="#exampleModal">
+                  <img src="assets/images/svg/user.svg" class="img-fluid rounded-circle">
+              </a>
+              <a href="#" target="_blank" class="nav-link nav-link-icon bg-light rounded-circle d-flex justify-content-center align-items-center" data-toggle="modal" data-target="#loginModal" style="width: 40px; height: 40px;">
+                  <img src="assets/images/svg/user.svg" class="img-fluid rounded-circle" id="userIcon">
               </a>
             </li>
-<!--            <li class="nav-item">-->
-<!--              <a href="#" target="_blank" class="nav-link d-lg-none" data-target="exampleModal">注 册</a>-->
-<!--              <button target="_blank" class="btn btn-sm bg-white d-none d-lg-inline-flex text-primary" onclick="window.location.href='./pages/regist.html'">注册</button>-->
-<!--            </li>-->
           </ul>
         </div>
       </div>
@@ -86,31 +66,31 @@
       <section class="row">
         <div class="col-md-1 display-1"></div>
           <div class="col-md-7 container-fluid" style="background-color: green;">
-             <div class="row" style="background-color: yellow;">轮播图
-<!--                  <div id="carouselExampleSlidesOnly" class="carousel slide text-center" data-ride="carousel" data-interval="3000">-->
-<!--                      <ol class="carousel-indicators">-->
-<!--                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>-->
-<!--                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>-->
-<!--                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
-<!--                      </ol>-->
-<!--                      <div class="carousel-inner">-->
-<!--                          <div class="carousel-item active">-->
-<!--                              <div class="d-flex align-items-center justify-content-center" style="height: 500px;">-->
-<!--                                  <img src="assets/images/backgrounds/img_4.png" class="img-fluid" alt="...">-->
-<!--                              </div>-->
-<!--                          </div>-->
-<!--                          <div class="carousel-item">-->
-<!--                              <div class="d-flex align-items-center justify-content-center" style="height: 500px;">-->
-<!--                                  <img src="assets/images/backgrounds/img_3.png" class="img-fluid" alt="...">-->
-<!--                              </div>-->
-<!--                          </div>-->
-<!--                          <div class="carousel-item">-->
-<!--                              <div class="d-flex align-items-center justify-content-center" style="height: 500px;">-->
-<!--                                  <img src="assets/images/backgrounds/img_5.png" class="img-fluid" alt="...">-->
-<!--                              </div>-->
-<!--                          </div>-->
-<!--                      </div>-->
-<!--                  </div>-->
+             <div class="row" style="background-color: yellow;">
+                  <div id="carouselExampleSlidesOnly" class="carousel slide text-center" data-ride="carousel" data-interval="3000">
+                      <ol class="carousel-indicators">
+                          <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                      </ol>
+                      <div class="carousel-inner">
+                          <div class="carousel-item active">
+                              <div class="d-flex align-items-center justify-content-center" style="height: 500px;">
+                                  <img src="assets/images/backgrounds/img_6.png" class="img-fluid" alt="...">
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="d-flex align-items-center justify-content-center" style="height: 500px;">
+                                  <img src="assets/images/backgrounds/img_3.png" class="img-fluid" alt="...">
+                              </div>
+                          </div>
+                          <div class="carousel-item">
+                              <div class="d-flex align-items-center justify-content-center" style="height: 500px;">
+                                  <img src="assets/images/backgrounds/img_5.png" class="img-fluid" alt="...">
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
               <div class="row">网站介绍，宗旨</div>
           </div>
@@ -253,23 +233,20 @@
               <a class="nav-link" href="https://facebook.com/webpixels" target="_blank"><i class="fab fa-facebook"></i></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://github.com/webpixels" target="_blank"><i class="fab fa-github"></i></a>
+                <a class="nav-link nav-link-icon" href="https://gitee.com/chai-hecheng" target="_blank"><img src="assets/images/svg/gitee.svg"><span class="ml-2 d-lg-none">Gitee</span></a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="https://dribbble.com/webpixels" target="_blank"><i class="fab fa-dribbble"></i></a>
+              <a class="nav-link" href="https://github.com/GH-ID-CHC" target="_blank"><i class="fab fa-github"></i></a>
             </li>
           </ul>
         </div>
       </div>
     </footer>
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel" aria-hidden="true">
-    <div class="modal-dialog" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title text-center" id="loginModalLabel">用户登录</h5>
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content mac-modal-content">
+            <div class="mac-title-bar">
+                <h5 class="modal-title mx-auto text-white" id="loginModalLabel">ONE PIECE登录</h5>
             </div>
             <div class="modal-body">
                 <!-- 账号输入框 -->
@@ -285,9 +262,9 @@
             </div>
             <div class="modal-footer">
                 <!-- 登录按钮 -->
-                <button type="button" class="btn btn-primary">登录</button>
+                <button type="button" class="btn btn-primary" id="login">登录</button>
                 <!-- 注册按钮 -->
-                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="window.location.href='./pages/regist.html'">注册</button>
+<!--                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="window.location.href='./pages/regist.html'">注册</button>-->
             </div>
         </div>
     </div>
@@ -307,5 +284,6 @@
     <script src="./assets/vendor/textarea-autosize/textarea-autosize.min.js"></script>
     <!-- Theme JS -->
     <script src="./assets/js/theme.js"></script>
+    <script src="./assets/js/index2.js"></script>
   </body>
 </html>
