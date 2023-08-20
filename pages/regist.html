@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>注册页面</title>
+    <!-- 引入Bootstrap 4的CSS文件 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+<div class="container mt-5">
+    <h2>注册页面</h2>
+    <form>
+        <div class="form-group">
+            <label for="accountName">账号名称</label>
+            <input type="text" class="form-control" id="accountName" placeholder="请输入账号名称">
+        </div>
+        <div class="form-group">
+            <label for="username">账号</label>
+            <input type="text" class="form-control" id="username" placeholder="请输入账号">
+        </div>
+        <div class="form-group">
+            <label for="password">密码</label>
+            <input type="password" class="form-control" id="password" placeholder="请输入密码">
+        </div>
+        <div class="form-group">
+            <label for="fullName">姓名</label>
+            <input type="text" class="form-control" id="fullName" placeholder="请输入姓名">
+        </div>
+        <div class="form-group">
+            <label>性别</label>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="male" value="male">
+                <label class="form-check-label" for="male">
+                    男性
+                </label>
+            </div>
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                <label class="form-check-label" for="female">
+                    女性
+                </label>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="avatar">头像</label>
+            <input type="file" class="form-control-file" id="avatar">
+        </div>
+        <button type="submit" class="btn btn-primary">注册</button>
+    </form>
+</div>
+
+<!-- 引入Bootstrap 4的JavaScript文件 -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
