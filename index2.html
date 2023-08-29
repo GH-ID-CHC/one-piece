@@ -337,27 +337,53 @@
 <div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
      aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content mac-modal-content">
+        <div class="modal-content">
             <div class="mac-title-bar">
                 <h5 class="modal-title mx-auto text-white" id="loginModalLabel">ONE PIECE登录</h5>
             </div>
-            <div class="modal-body">
-                <!-- 账号输入框 -->
-                <div class="form-group">
-                    <label for="username">账号</label>
-                    <input type="text" class="form-control" id="username" placeholder="请输入账号">
-                </div>
-                <!-- 密码输入框 -->
-                <div class="form-group">
-                    <label for="password">密码</label>
-                    <input type="password" class="form-control" id="password" placeholder="请输入密码">
+            <div class="modal-body pb-4">
+                <div>
+                    <div class="m-auto">
+                        <ul class="nav nav-tabs  nav-justified" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active w-100" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">公众号登录</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link w-100" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">微信扫码登录</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane text-center fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                            <div>
+                                <img src="assets/images/twoCode/gzh.jpg" alt="公众号二维码">
+                            </div>
+                            <div class="small pb-3">扫码关注公众号『 ONE PIECE 』获取动态码</div>
+                            <div class="input-group input-group-sm mb-3 m-auto" style="width: 258px;">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">动态码</span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                       aria-describedby="inputGroup-sizing-default" placeholder="请输入6位动态验证码"
+                                       style="font-weight: bold" data-pure-clear-button="true">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade text-center" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                            <div>
+                                <img src="assets/images/twoCode/img.png" alt="公众号二维码">
+                            </div>
+                            <div class="small pb-3">使用微信扫一扫登录“ONE PIECE中文网”</div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="modal-footer">
-                <!-- 登录按钮 -->
-                <button type="button" class="btn btn-primary" id="login">登录</button>
-                <!-- 注册按钮 -->
-                <!--                <button type="button" class="btn btn-secondary" data-dismiss="modal" onclick="window.location.href='./pages/regist.html'">注册</button>-->
+                <div class="w-100">
+                    <button type="button" class="btn btn-primary w-100">登 录</button>
+                    <div class="text-center pt-2">
+                        注册登录即表示同意<a href="#" class="text-primary">用户协议</a>和<a href="#" class="text-primary">隐私政策</a>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
