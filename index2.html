@@ -346,15 +346,18 @@
                     <div class="m-auto">
                         <ul class="nav nav-tabs  nav-justified" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link active w-100" id="home-tab" data-toggle="tab" data-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">公众号登录</button>
+                                <button class="nav-link active w-100" id="pubAccLogin-tab" data-toggle="tab" data-target="#pubAccLogin" type="button" role="tab" aria-controls="pubAccLogin" aria-selected="true">公众号登录</button>
                             </li>
                             <li class="nav-item" role="presentation">
-                                <button class="nav-link w-100" id="profile-tab" data-toggle="tab" data-target="#profile" type="button" role="tab" aria-controls="profile" aria-selected="false">微信扫码登录</button>
+                                <button class="nav-link w-100" id="wxLogin-tab" data-toggle="tab" data-target="#wxLogin" type="button" role="tab" aria-controls="wxLogin" aria-selected="false">微信扫码登录</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link w-100" id="qqLogin-tab" data-toggle="tab" data-target="#qqLogin" type="button" role="tab" aria-controls="qqLogin" aria-selected="false">QQ扫码登录</button>
                             </li>
                         </ul>
                     </div>
                     <div class="tab-content" id="myTabContent">
-                        <div class="tab-pane text-center fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="tab-pane text-center fade show active" id="pubAccLogin" role="tabpanel" aria-labelledby="pubAccLogin-tab">
                             <div>
                                 <img src="assets/images/twoCode/gzh.jpg" alt="公众号二维码">
                             </div>
@@ -368,11 +371,17 @@
                                        style="font-weight: bold" data-pure-clear-button="true">
                             </div>
                         </div>
-                        <div class="tab-pane fade text-center" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="tab-pane fade text-center" id="wxLogin" role="tabpanel" aria-labelledby="wxLogin-tab">
                             <div>
-                                <img src="assets/images/twoCode/img.png" alt="公众号二维码">
+                                <img src="assets/images/twoCode/img.png" alt="微信二维码">
                             </div>
                             <div class="small pb-3">使用微信扫一扫登录“ONE PIECE中文网”</div>
+                        </div>
+                        <div class="tab-pane fade text-center" id="qqLogin" role="tabpanel" aria-labelledby="qqLogin-tab">
+                            <div>
+                                <img src="assets/images/twoCode/img.png" alt="QQ二维码">
+                            </div>
+                            <div class="small pb-3">使用QQ扫一扫登录“ONE PIECE中文网”</div>
                         </div>
                     </div>
                 </div>
