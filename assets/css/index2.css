@@ -1,11 +1,18 @@
-body{
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
     background-image: url("../images/backgrounds/bg_1.png");
     /*background-color: #E8F2FF;*/
     background-color: #E9BA84;
 }
+
 button:focus {
     outline: 0;
 }
+
 section {
     margin: 10px auto;
 }
@@ -27,36 +34,56 @@ section {
 .home_blog li {
     margin-bottom: 20px;
 }
+
 /*博客标题*/
-.title_blog{
+.title_blog {
     height: 40px;
     background-color: #FFD700;
     font-size: 16px;
     line-height: 40px;
     background-image: url("../images/backgrounds/bg_2.png");
 }
-.main_blog{
+
+.main_blog {
     background-color: rgba(230, 230, 230, 0.94);
 }
+
 /*头像通用*/
-.avatar{
+.avatar {
     vertical-align: middle;
     width: 50px;
     height: 50px;
     border-radius: 50%;
 }
-.margin_h{
+
+.margin_h {
     margin: 10px auto;
 }
+
 /*博客作者信息*/
-.user_blog > span{
+.user_blog > span {
     margin-left: 10px;
 }
-.right-box > div{
+
+.right-box > div {
     margin-bottom: 10px;
 }
-.attention{
+
+.attention {
     height: 40px;
     line-height: 32px;
     border: 4px solid red;
+}
+
+/*热门贴子*/
+.log_hot li {
+    font-weight: bold;
+    list-style-image: url("../images/svg/li_logo.png");
+    margin: 0px auto;
+    height: 30px;
+    line-height: 30px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    border-bottom: 3px dotted #C1C1C1;
 }
