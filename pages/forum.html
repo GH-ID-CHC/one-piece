@@ -74,9 +74,17 @@
     <!--      spotlight parallax bg-cover bg-size--cover -->
     <section class="row">
         <div class="col-md-8 left-box">
+            <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                <span class="alert-inner--icon"><i class="fas fa-times"></i></span>
+                <span class="alert-inner--text"><strong>Danger</strong> 继续浏览本站前，请注意本站含有大量剧透!</span>
+                <button type="button" class="undo" aria-label="Undo">Undo</button>
+                <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
             <!--            特殊警示标题-->
             <div class="row attention">
-                <div class="col-md-12 text-center text-danger font-weight-bold">继续浏览本站前，请注意本站含有大量剧透。
+                <div class="col-md-12 text-center text-danger font-weight-bold">继续浏览本站前，请注意本站含有大量剧透！
                 </div>
             </div>
             <!--            博客部分-->
@@ -94,8 +102,7 @@
                                         <div class="col-md-12 margin_h">
                                             <div class="row">
                                                 <div class="col-md-3 user_blog">
-                                                    <img src="../assets/images/avatars/lufei.png"
-                                                         class="img-fluid rounded-circle avatar">
+                                                    <img src="../assets/images/avatars/lufei.png" class="avatar avatar-lg mr-2">
                                                     <span class="text-dark right-5">路飞先生</span>
                                                 </div>
                                                 <div class="col-md-3">
@@ -124,8 +131,7 @@
                                         <div class="col-md-12 margin_h">
                                             <div class="row">
                                                 <div class="col-md-3 user_blog">
-                                                    <img src="../assets/images/avatars/lufei.png"
-                                                         class="img-fluid rounded-circle avatar">
+                                                    <img src="../assets/images/avatars/lufei.png" class="avatar avatar-lg mr-2">
                                                     <span class="text-dark right-5">路飞先生</span>
                                                 </div>
                                                 <div class="col-md-3">
@@ -142,6 +148,28 @@
                                             <p>“所以一般来说我不把电影当原作。”</p>
                                             <p>
                                                 但也不是说我不喜欢电影的所有部分啦。至少我觉得美音还蛮可爱的、也很喜欢她的故事。但要做比喻……</p>
+                                        </div>
+                                        <div class="col-md-12 text-center">
+                                            <div class="btn-group btn-action-label" role="group" aria-label="Like">
+                                                <button type="button" class="btn btn-sm btn-secondary btn-action">
+                                                    <i class="fas fa-thumbs-up"></i>
+                                                    <span>Like</span>
+                                                </button>
+                                                <a href="#" class="btn btn-sm btn-outline-secondary btn-label">1030</a>
+                                            </div>
+                                            <div class="btn-group btn-action-label" role="group" aria-label="Like">
+                                                <button type="button" class="btn btn-sm btn-secondary btn-action">
+                                                    <i class="fas fa-thumbs-up"></i>
+                                                    <span>评论</span>
+                                                </button>
+                                                <a href="#" class="btn btn-sm btn-outline-secondary btn-label">1030</a>
+                                            </div>
+                                            <div class="btn-group btn-action-label" role="group" aria-label="Like">
+                                                <button type="button" class="btn btn-sm btn-primary btn-action">
+                                                    <i class="fas fa-code-branch"></i>
+                                                </button>
+                                                <a href="#" class="btn btn-sm btn-outline-primary btn-label">5500</a>
+                                            </div>
                                         </div>
                                         <div class="col-md-12 text-center text-primary margin_h">
                                             <a href="../index.html">阅读全文</a>
