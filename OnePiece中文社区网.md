@@ -48,7 +48,7 @@
 
 ## web开发
 
-技术栈：html+css+js+ajax+bootstrap
+技术栈：html+css+js+ajax+bootstrap4
 
 ### 页面ico
 
@@ -73,6 +73,87 @@
 ~~·表单方式直接劝退（本人比较厌烦表单）~~
 
 ==采用越简单越好的策略==
+
+### 富文本编辑器
+
+`采用MarkDown`
+![image-20231019213526273](images/image-20231019213526273.png)
+
+使用`summernote`采用bootstrap4
+
+[summernote 探索(官方文档)_summernote 文档-CSDN博客](https://blog.csdn.net/wulex/article/details/108337148)
+
+[Getting started (summernote.org)](https://summernote.org/getting-started/#clone-or-fork-via-github)
+
+
+
+```
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Summernote with Bootstrap 4</title>
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/popper/popper.min.js"></script>
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+    <script src="../assets/lang/summernote-zh-CN.js"></script>
+</head>
+<body>
+<div id="summernote"></div>
+<script>
+    $(function () {
+        $('#summernote').summernote({
+            height: 400,    //设置高度
+            toolbar: [      //自定义工具栏
+                ['style', ['style']],
+                ['font', ['bold', 'underline', 'clear']],
+                ['fontname', ['fontname']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph', 'height', 'hr']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'video']],
+                ['view', ['fullscreen', 'codeview', 'help']]
+            ],
+            tabsize: 2,
+            lang: 'zh-CN',
+            callbacks: {     // 回调函数
+                // 图片上传
+                onImageUpload: function (files) {
+                    var formData = new FormData();
+                    formData.append("file", files[0]);
+                    $.ajax({
+                        url: 'textEdit/imgUpload', //后台文件上传接口
+                        type: 'POST',
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        success: function (data) {
+                            //图片插入到summernote中
+                            $("#summernote").summernote('insertImage', data);
+                        },
+                        error: function () {
+                            alert("上传失败")
+                        }
+                    })
+                },
+                //清除word复制的格式
+                onPaste: function (ne) {
+                    var bufferText = ((ne.originalEvent || ne).clipboardData || window.clipboardData).getData('Text/plain');
+                    ne.preventDefault ? ne.preventDefault() : (ne.returnValue = false);
+                    setTimeout(function () {
+                        document.execCommand("insertText", false, bufferText);
+                    }, 10);
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
+```
 
 ## 微信公众号开发
 

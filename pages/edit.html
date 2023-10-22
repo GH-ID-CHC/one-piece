@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <!--    视口模式-->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description"
+          content="Probably the most complete UI kit out there. Multiple functionalities and controls added,  extended color palette and beautiful typography, designed as its own extended version of Bootstrap at  the highest level of quality.">
+    <meta name="author" content="CHAI">
+    <meta name="keywords" content="海贼王,one piece,海贼王中文社区，航海王"/>
+    <title>OnePiece</title>
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Nunito:400,600,700,800|Roboto:400,500,700" rel="stylesheet">
+    <!-- Theme CSS -->
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <link type="text/css" href="../assets/css/theme.css" rel="stylesheet">
+    <!-- Demo CSS - No need to use these in your project -->
+    <link type="text/css" href="../assets/css/demo.css" rel="stylesheet">
+    <link type="text/css" href="../assets/css/index2.css" rel="stylesheet">
+    <!--站点图标-->
+    <link rel="shortcut icon" href="../assets/images/logo/logo.ico" type="image/x-icon">
+    <script src="../assets/vendor/popper/popper.min.js"></script>
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+    <script src="../assets/lang/summernote-zh-CN.js"></script>
+</head>
+<body>
+<!--  navbar-transparent-->
+<nav class="navbar navbar-expand-lg  navbar-dark bg-blue py-0">
+    <div class="container">
+        <a class="navbar-bran" href="../index.html"><img src="../assets/images/logo/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-action="offcanvas-open" data-target="#navbar_main"
+                aria-controls="navbar_main" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="navbar-collapse offcanvas-collapse text-center" id="navbar_main">
+            <ul class="navbar-nav ml-auto align-items-lg-center">
+                <h6 class="dropdown-header font-weight-600 d-lg-none px-0">Menu</h6>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="../index.html">超话</a>
+                </li>
+                <!--            pages-->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbar_main_dropdown_1" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">素材区域</a>
+                    <div class="dropdown-menu" aria-labelledby="navbar_1_dropdown_1">
+                        <a class="dropdown-item" href="../pages/homepage.html">Homepage</a>
+                        <a class="dropdown-item" href="../pages/about.html">About us</a>
+                        <a class="dropdown-item" href="../pages/sign-in.html">Sign in</a>
+                        <a class="dropdown-item" href="../pages/contact.html">Contact</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html">讨论区</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../docs/introduction.html">活动专区</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../docs/introduction.html">关于作者</a>
+                </li>
+                <!--              头像显示区域（手机、电脑）-->
+                <li class="nav-item">
+                    <a href="#" target="_blank" class="nav-link d-lg-none" data-target="#loginModal">
+                        <img src="../assets/images/svg/user.svg" class="img-fluid rounded-circle">
+                    </a>
+                    <a href="#" target="_blank"
+                       class="nav-link nav-link-icon bg-light rounded-circle d-flex justify-content-center align-items-center"
+                       data-toggle="modal" data-target="#loginModal" style="width: 40px; height: 40px;">
+                        <img src="../assets/images/svg/user.svg" class="avatar" id="userIcon"
+                             style="width: 40px; height: 40px;">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+<main class="main container">
+    <!--      spotlight parallax bg-cover bg-size--cover -->
+    <div class="row">
+        <div class="col-md-2"></div>
+        <div class="col-md-8">
+            <form>
+                <div class="form-group row">
+                    <label for="inputTitle" class="col-md-2 col-form-label text-right">标题:</label>
+                    <div class="col-md-10">
+                        <input type="text" class="form-control" id="inputTitle" placeholder="请输入帖子的标题">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="inputDescribe" class="col-sm-2 col-form-label text-right">描述:</label>
+                    <div class="col-sm-10">
+                        <input type="text" class="form-control" id="inputDescribe" placeholder="简单介绍帖子的内容">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="summernote" class="col-sm-2 col-form-label text-right">内容:</label>
+                    <div class="col-sm-10">
+                        <div id="summernote"></div>
+                    </div>
+                </div>
+                <fieldset class="form-group row">
+                    <legend class="col-form-label col-sm-2 float-sm-left pt-0 text-right">Radios</legend>
+                    <div class="col-sm-10">
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                First radio
+                            </label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios2" value="option2">
+                            <label class="form-check-label" for="gridRadios2">
+                                Second radio
+                            </label>
+                        </div>
+                        <div class="form-check disabled">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios3" value="option3" disabled>
+                            <label class="form-check-label" for="gridRadios3">
+                                Third disabled radio
+                            </label>
+                        </div>
+                    </div>
+                </fieldset>
+                <div class="form-group row">
+                    <div class="col-sm-10 offset-sm-2">
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" id="gridCheck1">
+                            <label class="form-check-label" for="gridCheck1">
+                                Example checkbox
+                            </label>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="exampleFormControlFile1" class="col-sm-2 col-form-label text-right">上传封面</label>
+                    <div class="col-sm-10">
+                        <input type="file" class="form-control-file" id="exampleFormControlFile1">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <div class="col-sm-12 text-center">
+                        <button type="submit" class="btn btn-primary">发 布</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col-md-2"></div>
+    </div>
+</main>
+<footer class="pt-5 pb-3 footer footer-dark bg-tertiary">
+    <div class="container">
+        <div class="row d-flex align-items-center">
+          <span class="">
+            &copy; 2023 <a href="https://webpixels.io/" class="footer-link" target="_blank">CHAI</a>. 版权所有.
+          </span>
+            <ul class="nav ml-lg-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="https://instagram.com/webpixelsofficial" target="_blank">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://facebook.com/webpixels" target="_blank">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-icon" href="https://gitee.com/chai-hecheng" target="_blank">
+                        <img src="../assets/images/svg/gitee.svg"><span class="ml-2 d-lg-none">Gitee</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://github.com/GH-ID-CHC" target="_blank">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</footer>
+<div class="modal fade" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalLabel"
+     aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="mac-title-bar">
+                <h5 class="modal-title mx-auto text-white" id="loginModalLabel">ONE PIECE登录</h5>
+            </div>
+            <div class="modal-body pb-4">
+                <div>
+                    <div class="m-auto">
+                        <ul class="nav nav-tabs  nav-justified" id="myTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active w-100" id="pubAccLogin-tab" data-toggle="tab"
+                                        data-target="#pubAccLogin" type="button" role="tab" aria-controls="pubAccLogin"
+                                        aria-selected="true">公众号登录
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link w-100" id="wxLogin-tab" data-toggle="tab" data-target="#wxLogin"
+                                        type="button" role="tab" aria-controls="wxLogin" aria-selected="false">微信扫码登录
+                                </button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link w-100" id="qqLogin-tab" data-toggle="tab" data-target="#qqLogin"
+                                        type="button" role="tab" aria-controls="qqLogin" aria-selected="false">QQ扫码登录
+                                </button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane text-center fade show active" id="pubAccLogin" role="tabpanel"
+                             aria-labelledby="pubAccLogin-tab">
+                            <div>
+                                <img src="../assets/images/twoCode/gzh.jpg" alt="公众号二维码">
+                            </div>
+                            <div class="small pb-3">扫码关注公众号『 ONE PIECE 』获取动态码</div>
+                            <div class="input-group input-group-sm mb-3 m-auto" style="width: 258px;">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="inputGroup-sizing-default">动态码</span>
+                                </div>
+                                <input type="text" class="form-control" aria-label="Sizing example input"
+                                       aria-describedby="inputGroup-sizing-default" placeholder="请输入6位动态验证码"
+                                       style="font-weight: bold" data-pure-clear-button="true">
+                            </div>
+                        </div>
+                        <div class="tab-pane fade text-center" id="wxLogin" role="tabpanel"
+                             aria-labelledby="wxLogin-tab">
+                            <div>
+                                <img src="../assets/images/twoCode/img.png" alt="微信二维码">
+                            </div>
+                            <div class="small pb-3">使用微信扫一扫登录“ONE PIECE中文网”</div>
+                        </div>
+                        <div class="tab-pane fade text-center" id="qqLogin" role="tabpanel"
+                             aria-labelledby="qqLogin-tab">
+                            <div>
+                                <img src="../assets/images/twoCode/img.png" alt="QQ二维码">
+                            </div>
+                            <div class="small pb-3">使用QQ扫一扫登录“ONE PIECE中文网”</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <div class="w-100">
+                    <button type="button" class="btn btn-primary w-100">登 录</button>
+                    <div class="text-center pt-2">
+                        注册登录即表示同意<a href="#" class="text-primary">用户协议</a>和<a href="#"
+                                                                                            class="text-primary">隐私政策</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    $(function () {
+        $('#summernote').summernote({
+            height: 400,    //设置高度
+            toolbar: [      //自定义工具栏
+                ['style', ['style']],
+                ['font', ['bold', 'underline', 'clear']],
+                ['fontname', ['fontname']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph', 'height', 'hr']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'video']],
+                ['view', ['fullscreen', 'codeview', 'help']]
+            ],
+            tabsize: 2,
+            lang: 'zh-CN',
+            callbacks: {     // 回调函数
+                // 图片上传
+                onImageUpload: function (files) {
+                    var formData = new FormData();
+                    formData.append("file", files[0]);
+                    $.ajax({
+                        url: 'textEdit/imgUpload', //后台文件上传接口
+                        type: 'POST',
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        success: function (data) {
+                            //图片插入到summernote中
+                            $("#summernote").summernote('insertImage', data);
+                        },
+                        error: function () {
+                            alert("上传失败")
+                        }
+                    })
+                },
+                //清除word复制的格式
+                onPaste: function (ne) {
+                    var bufferText = ((ne.originalEvent || ne).clipboardData || window.clipboardData).getData('Text/plain');
+                    ne.preventDefault ? ne.preventDefault() : (ne.returnValue = false);
+                    setTimeout(function () {
+                        document.execCommand("insertText", false, bufferText);
+                    }, 10);
+                }
+            }
+        });
+    });
+</script>
+<!-- Core -->
+<!-- FontAwesome 5 -->
+<script src="../assets/vendor/fontawesome/js/fontawesome-all.min.js" defer></script>
+<!-- Page plugins -->
+<script src="../assets/vendor/bootstrap-select/js/bootstrap-select.min.js"></script>
+<script src="../assets/vendor/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+<script src="../assets/vendor/input-mask/input-mask.min.js"></script>
+<script src="../assets/vendor/nouislider/js/nouislider.min.js"></script>
+<script src="../assets/vendor/textarea-autosize/textarea-autosize.min.js"></script>
+<!-- Theme JS -->
+<script src="../assets/js/theme.js"></script>
+<script src="../assets/js/index.js"></script>
+</body>
+</html>
