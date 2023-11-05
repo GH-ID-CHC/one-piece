@@ -23,14 +23,13 @@
 <!--  navbar-transparent-->
 <nav class="navbar navbar-expand-lg  navbar-dark bg-blue py-0">
     <div class="container">
-        <a class="navbar-bran" href="./index.html"><img src="assets/images/logo/logo.png"></a>
+        <a class="navbar-brand" href="./index.html"><img src="assets/images/logo/logo.png"></a>
         <button class="navbar-toggler" type="button" data-action="offcanvas-open" data-target="#navbar_main"
                 aria-controls="navbar_main" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="navbar-collapse offcanvas-collapse text-center" id="navbar_main">
             <ul class="navbar-nav ml-auto align-items-lg-center">
-                <h6 class="dropdown-header font-weight-600 d-lg-none px-0">Menu</h6>
                 <li class="nav-item">
                     <a class="nav-link" href="pages/forum.html">超话</a>
                 </li>
@@ -38,12 +37,12 @@
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbar_main_dropdown_1" role="button"
                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">素材区域</a>
-                    <div class="dropdown-menu" aria-labelledby="navbar_1_dropdown_1">
+<!--                    <div class="dropdown-menu" aria-labelledby="navbar_1_dropdown_1">
                         <a class="dropdown-item" href="./pages/homepage.html">Homepage</a>
                         <a class="dropdown-item" href="./pages/about.html">About us</a>
                         <a class="dropdown-item" href="./pages/sign-in.html">Sign in</a>
                         <a class="dropdown-item" href="./pages/contact.html">Contact</a>
-                    </div>
+                    </div>-->
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./index.html">讨论区</a>
@@ -56,14 +55,14 @@
                 </li>
                 <!--              头像显示区域（手机、电脑）-->
                 <li class="nav-item">
-                    <a href="#" target="_blank" class="nav-link d-lg-none" data-target="#loginModal">
+                    <a href="#" target="_blank" class="nav-link" data-target="#loginModal" data-toggle="modal" data-target="#loginModal">
                         <img src="assets/images/svg/user.svg" class="img-fluid rounded-circle">
                     </a>
-                    <a href="#" target="_blank"
-                       class="nav-link nav-link-icon bg-light rounded-circle d-flex justify-content-center align-items-center"
+<!--                    <a href="#" target="_blank"
+                       class="nav-link nav-link-icon d-md-block bg-light rounded-circle d-flex justify-content-center align-items-center"
                        data-toggle="modal" data-target="#loginModal" style="width: 40px; height: 40px;">
                         <img src="assets/images/svg/user.svg" class="avatar" id="userIcon" style="width: 40px; height: 40px;" >
-                    </a>
+                    </a>-->
                 </li>
             </ul>
         </div>
@@ -198,7 +197,8 @@
             </div>
 
         </div>
-        <div class="col-md-4 left-3 visible-md-block">
+        <div class="col-md-4 left-3 d-none d-md-block">
+<!--            小屏幕未展示下面的部分-->
             <!--最新情报-->
             <div class="container-fluid text-white right-box">
                 <div class="row bg-red rounded">
