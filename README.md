@@ -1,74 +1,389 @@
-# [Boomerang - Free Bootstrap UI Kit](https://preview.webpixels.io/boomerang-free-bootstrap-ui-kit/?utm_source=github&utm_medium=readme&utm_campaign=themes&utm_content=boomerang-free-bootstrap-ui-kit)
+<h1 style="text-align:center"><img src='images/latest.png'>Onepiece中文社区</h1>
 
-![Boomerang - Free Bootstrap UI Kit Cover](https://webpixels.s3.eu-central-1.amazonaws.com/public/github/boomerang-free-bootstrap-ui-kit.jpg "Boomerang - Free Bootstrap UI Kit")
+网站名称：<span style="color:red">**OnePiece**</span>
 
-Boomerang is an innovative HTML template solution, based on Bootstrap 4, which combines beautiful design and flawless functionality.
+抄作业：
 
-This is a free light version version that can be downloaded and used as needed (even in commercial projects).
+[One Piece Wiki | Fandom](https://onepiece.fandom.com/wiki/One_Piece_Wiki)
 
-[See Demo](https://preview.webpixels.io/boomerang-free-bootstrap-ui-kit?utm_source=github&utm_medium=readme&utm_campaign=themes&utm_content=boomerang-free-bootstrap-ui-kit)
+[TalkOP海道-海贼王论坛-海贼王社区交流-海贼王中文网-航海王论坛-海贼王全集动画漫画讨论 - Powered by Discuz!](https://bbs.talkop.com/)
 
-## Download
+前言：专为海贼王建立的中文社区网站，任何人可以在这里发布帖子、查阅海贼王的相关信息，主要为宣传海贼王，为所有的海米创建一个“公共基地”。
 
-Two quick-start options are available:
+优势：打破海贼王没有中文网站的缺陷、突破微信或者qq群的人数限制、提供海贼王详细的第一手消息。
 
-- [Download the latest release](https://github.com/webpixels/boomerang-free-bootstrap-ui-kit/archive/master.zip).
-- Clone the repo: `git clone https://github.com/webpixels/boomerang-free-bootstrap-ui-kit.git`.
+![image-20230813175919866](images/image-20230813175919866.png)
 
-## Interested in the PRO version?
+## web端
 
-- [Open Product Page](https://webpixels.io/themes/boomerang-multipurpose-bootstrap-theme?utm_source=github&utm_medium=readme&utm_campaign=themes&utm_content=boomerang-free-bootstrap-ui-kit)
-- [Live Preview](https://preview.webpixels.io/boomerang-multipurpose-bootstrap-theme?utm_source=github&utm_medium=readme&utm_campaign=themes&utm_content=boomerang-free-bootstrap-ui-kit)
+适配手机端、平板、web
 
-## Install
+### 功能列表
 
-Automate painful or time-consuming tasks in your development workflow, so you can stop messing around and build something using Gulp
+注册：用户的注册
 
-- npm install gulp-cli -g
-- npm install
-- gulp
+登录：用户的登录（微信登录、qq登录、op账号）
 
-### Additional Gulp tasks
+最新情报：漫画、动画的最近报告
 
-- gulp sync:libs (update the src/assets/libs folder in case new dependencies have been installed)
-- gulp copy:libs (copy all the dependencies compiled assets in the dist folder)
+超话发表：相当于微博中热搜帖子的发表、可以进行进行点赞、评论、转发
 
-## Documentation
+讨论区：讨论某一个话题
 
-No matter you are a developer or new to web design, you will find our theme very easy to customize with an intuitive HTML markup. In the theme's pack you will find a docs folder with all the information you need to get started.
+素材区域：图片、短视频
 
-## Typeface
+海贼王排行榜：人物热度排行版、最爱章节排行版
 
-Boomerang is made using the Nunito typeface, which can be downloaded for free here: https://fonts.google.com/
+海贼王历史时间线：[海贼王历史时间表-重要事件汇总 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/97378992)
 
-## Links
+## 后台
 
-More products from Webpixels: [https://webpixels.io](https://webpixels.io?utm_source=github&utm_medium=readme&utm_campaign=themes&utm_content=boomerang-free-bootstrap-ui-kit)
+注册登录功能
 
-### Social Media:
+## 管理端
 
-- Github: <https://github.com/webpixels>
-- Dribbble: <http://dribbble.com/webpixels>
-- Instagram: <http://www.instagram.com/webpxs>
-- Twitter: <http://www.twitter.com/webpxs>
-- Facebook: <http://www.facebook.com/webpixels>
+内容的审核
 
-## Authors
+海贼王的大数据分析
 
-**Alexis Enache**
+## web开发
 
-+ <http://dribbble.com/extrabright>
-+ <http://instagram.com/extragright>
-+ <http://twitter.com/3xtrabright>
+技术栈：html+css+js+ajax+bootstrap4
 
-## Support
+### 页面ico
 
-We create long lasting relationships with our customers and we want to offer you the best help in order to get started with any of our products.
+```
+<link rel="shortcut icon" href="./assets/images/logo/logo.ico" type="image/x-icon">
+```
 
-For all our free resources we offer community support. Please visit our Github repository and post your issue, suggestion, or contribution.
+> 在header标签中添加
 
-[Get Support](https://github.com/webpixels/boomerang-free-bootstrap-ui-kit/issues)
+### 关于meta标签
 
-## 50k+ happy customers
+[meta设置编码、关键字、描述、作者、refresh_meta 设置编码_springlan的博客-CSDN博客](https://blog.csdn.net/springlan/article/details/106434164)
 
-Over the past 6 years, we’ve sold over 100k themes and learned the best way to build, maintain, and support our themes. Our mission is to bring the best development experience to designers and developers by offering the tools needed for having a quick and solid start in most web projects.
+### 图标库
+
+[Font Awesome 图标 | 菜鸟教程 (runoob.com)](https://www.runoob.com/font-awesome/fontawesome-tutorial.html)
+
+### 注册登录功能
+
+采用微信扫码或者公众号、QQ、登录的方式
+
+~~·表单方式直接劝退（本人比较厌烦表单）~~
+
+==采用越简单越好的策略==
+
+### 富文本编辑器
+
+`采用MarkDown`
+![image-20231019213526273](images/image-20231019213526273.png)
+
+使用`summernote`采用bootstrap4
+
+[summernote 探索(官方文档)_summernote 文档-CSDN博客](https://blog.csdn.net/wulex/article/details/108337148)
+
+[Getting started (summernote.org)](https://summernote.org/getting-started/#clone-or-fork-via-github)
+
+
+
+```
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>Summernote with Bootstrap 4</title>
+    <script src="../assets/vendor/jquery/jquery.min.js"></script>
+    <script src="../assets/vendor/popper/popper.min.js"></script>
+    <link rel="stylesheet" href="../assets/vendor/bootstrap/css/bootstrap.min.css">
+    <script src="../assets/js/bootstrap/bootstrap.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+    <script src="../assets/lang/summernote-zh-CN.js"></script>
+</head>
+<body>
+<div id="summernote"></div>
+<script>
+    $(function () {
+        $('#summernote').summernote({
+            height: 400,    //设置高度
+            toolbar: [      //自定义工具栏
+                ['style', ['style']],
+                ['font', ['bold', 'underline', 'clear']],
+                ['fontname', ['fontname']],
+                ['color', ['color']],
+                ['para', ['ul', 'ol', 'paragraph', 'height', 'hr']],
+                ['table', ['table']],
+                ['insert', ['link', 'picture', 'video']],
+                ['view', ['fullscreen', 'codeview', 'help']]
+            ],
+            tabsize: 2,
+            lang: 'zh-CN',
+            callbacks: {     // 回调函数
+                // 图片上传
+                onImageUpload: function (files) {
+                    var formData = new FormData();
+                    formData.append("file", files[0]);
+                    $.ajax({
+                        url: 'textEdit/imgUpload', //后台文件上传接口
+                        type: 'POST',
+                        data: formData,
+                        processData: false,
+                        contentType: false,
+                        success: function (data) {
+                            //图片插入到summernote中
+                            $("#summernote").summernote('insertImage', data);
+                        },
+                        error: function () {
+                            alert("上传失败")
+                        }
+                    })
+                },
+                //清除word复制的格式
+                onPaste: function (ne) {
+                    var bufferText = ((ne.originalEvent || ne).clipboardData || window.clipboardData).getData('Text/plain');
+                    ne.preventDefault ? ne.preventDefault() : (ne.returnValue = false);
+                    setTimeout(function () {
+                        document.execCommand("insertText", false, bufferText);
+                    }, 10);
+                }
+            }
+        });
+    });
+</script>
+</body>
+</html>
+```
+
+## 微信公众号开发
+
+![image-20230911211835220](images/image-20230911211835220.png)
+
+`AppSecret`：f0a485a32f0b0392652ce40e9f2c4757
+
+### wx-java-mp
+
+[WxJava微信公众号开发实战 (baobao555.tech)](https://baobao555.tech/archives/53#8.网页授权)
+
+### 基本配置
+
+![image-20230911205404747](images/image-20230911205404747.png)
+
+### 验证消息的确来自微信服务器
+
+```java
+List<String> list = Arrays.asList(WxConfigConstant.token, timestamp, nonce);
+//排序
+Collections.sort(list);
+//拼接
+StringBuilder builder = new StringBuilder();
+for (String s : list) {
+    builder.append(s);
+}
+//进行sha1加密
+try {
+    MessageDigest sha1 = MessageDigest.getInstance("sha1");
+    byte[] digest = sha1.digest(builder.toString().getBytes());
+    StringBuilder stringBuilder = new StringBuilder();
+    //将加密的数据进行拼接与signature进行比较
+    for (byte b : digest) {
+        stringBuilder.append(Integer.toHexString((b >> 4) & 15));
+        stringBuilder.append(Integer.toHexString(b & 15));
+    }
+    if (!signature.isEmpty() && signature.equals(stringBuilder.toString())) {
+        return echostr;
+    }
+} catch (NoSuchAlgorithmException e) {
+    throw new RuntimeException(e);
+}
+
+System.out.println("执行==>" + signature);
+return null;
+```
+
+### 短信发送功能
+
+当普通微信用户向公众账号发消息时，微信服务器将POST消息的XML数据包到开发者填写的URL上。
+
+接收普通消息需要通过输入流进行接收
+
+#### 解析xml流数据（dom4j）
+
+```xml
+<!-- XML 文件读写 -->
+<dependency>
+    <groupId>org.dom4j</groupId>
+    <artifactId>dom4j</artifactId>
+    <version>2.0.0</version>
+</dependency>
+```
+
+将xml输入流解析为map集合
+
+```java
+ServletInputStream inputStream = request.getInputStream();
+```
+
+`dom4j`:用于读取xml文件输入流的类
+
+```java
+HashMap<String, String> msgMap = new HashMap<>();
+try {
+    //获取文档输入流
+    ServletInputStream inputStream = request.getInputStream();
+    // dom4j 用于读取 XML 文件输入流的类
+    SAXReader saxReader = new SAXReader();
+    // 读取 XML 文件输入流, XML 文档对象
+    Document document = saxReader.read(inputStream);
+    // XML 文件的根节点
+    Element root = document.getRootElement();
+    // 所有的子节点
+    List<Element> childrenElement = root.elements();
+    for (Element element : childrenElement) {
+        msgMap.put(element.getName(), element.getStringValue());
+    }
+} catch (Exception e) {
+    e.printStackTrace();
+}
+System.out.println("收到消息"+msgMap);
+```
+
+#### 将对象转换为xml字符串
+
+```java
+TextMessage textMessage = new TextMessage();
+textMessage.setToUserName(msgMap.get("FromUserName"));
+textMessage.setFromUserName(msgMap.get("ToUserName"));
+textMessage.setCreateTime(new Date().toString());
+textMessage.setMsgType("text");
+textMessage.setContent("你好");
+
+//将对象转换为xml字符串
+XStream xStream = new XStream();
+xStream.processAnnotations(TextMessage.class);
+String xmlStr = xStream.toXML(textMessage);
+System.out.println(xmlStr);
+```
+
+```java
+@Data
+@XStreamAlias("xml")
+public class TextMessage extends BaseMessage{
+
+    @XStreamAlias("Content")
+    private String content;
+}
+```
+
+> `XStreamAlias`:设置格式与标签体
+
+![image-20230913232120480](images/image-20230913232120480.png)
+
+### 图文消息的发送
+
+![image-20230914230356805](images/image-20230914230356805.png)
+
+```java
+ArticlesMessage articlesMessage = new ArticlesMessage();
+articlesMessage.setToUserName(msgMap.get("FromUserName"));
+articlesMessage.setFromUserName(msgMap.get("ToUserName"));
+articlesMessage.setCreateTime(new Date().toString());
+articlesMessage.setMsgType(MessageType.NEWS);
+articlesMessage.setArticleCount("1");
+ItemMessage itemMessage = new ItemMessage();
+itemMessage.setTitle("路飞五档");
+itemMessage.setDescription("最高顶点！最强形态！");
+itemMessage.setPicUrl("http://mmbiz.qpic.cn/sz_mmbiz_jpg/XTDxMhlYfPgvlPibZ6JfpOc4AWQfAxGOV2AkowLQniaTbbdHpntMVOPwIce88Ww1FZrJInSiaRc1kdico2TwoDvbFQ/0");
+itemMessage.setUrl("http://www.onepiece.com");
+List<ItemMessage> itemMessages = new ArrayList<>();
+itemMessages.add(itemMessage);
+articlesMessage.setArticles(itemMessages);
+XStream xStream = new XStream();
+xStream.processAnnotations(ArticlesMessage.class);
+String xmlStr = xStream.toXML(articlesMessage);
+System.out.println(xmlStr);
+```
+
+### String.format的使用
+
+[String.format()的详细用法 - 知乎 (zhihu.com)](https://zhuanlan.zhihu.com/p/140512054)
+
+### 获取配置文件信息
+
+**获取yml文件中的信息**
+
+1. 在yml配置信息
+
+   ```
+   wx:
+     app-id: wxacee4a374359e5a0
+     app-secret: c341e9a5c1b62c4032dacfaab35f36bb
+   ```
+
+2. 创建动态代理
+
+   ```java
+   @Data
+   @Configuration
+   @ConfigurationProperties(prefix = "wx")
+   public class WxAccountConfig {
+   
+       // 公众号ID
+       private String appId;
+   
+       // 公众号secret
+       private String appSecret;
+   
+   }
+   ```
+
+3. 依赖注入
+
+   ```java
+   @Autowired
+   private WxAccountConfig wxAccountConfig;
+   ```
+
+参考：[java配置文件取值的几种方式（一般项目，国际化项目，springboot项目）_从配置文件取值_deelless的博客-CSDN博客](https://blog.csdn.net/weixin_43078114/article/details/100559836)
+
+在工具类中获取配置文件中值
+
+### 接入第三方平台
+
+[聚合数据 - API接口开放平台_API接口大全_免费API数据接口服务 (juhe.cn)](https://www.juhe.cn/)
+
+## 后端开发
+
+技术栈：SpringBoot+mybatis+mysql
+
+可能采用maku开源框架
+
+### 公众号扫码登录
+
+使用微信公众号获取登录验证码
+
+### swagger3的配置使用
+
+`maku`平台添加新的模块，需要在主模块中进行引用
+
+[微信公众号之验证码推送(spring-boot+测试号)_微信公众号发送验证码怎么实现_ctrlcaster的博客-CSDN博客](https://blog.csdn.net/qq_18804633/article/details/124239446)
+
+[微信公众号开发--实现扫码关注公众号自动登录网站_关注公众号登录网站_给变量取个好名吖的博客-CSDN博客](https://blog.csdn.net/qq_45145801/article/details/115368296)
+
+## 管理端开发
+
+技术栈：Vue2+element-ui
+
+## 问题总结
+
+### 前端页面布局
+
+
+
+h5+css完成页面的布局
+
+https://www.bilibili.com/video/BV11741177cJ/?spm_id_from=333.1007.top_right_bar_window_history.content.click&vd_source=7d2190e3d81751e1c303328c9259bb59
+
+### 多端适配
+
+### web端登录注册
